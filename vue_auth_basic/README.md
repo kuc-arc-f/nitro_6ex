@@ -13,16 +13,22 @@
 
 react , auth example
 
-* .env : user data read
+* nitro.config.ts : user data read
 
 
 ***
 ### Setup
-* .env
+* nitro.config.ts
+* runtimeConfig: add
 
 ```
-VITE_USER_NAME="user1@example.com"
-VITE_USER_PASSWORD="1234"
+export default defineNitroConfig({
+  compatibilityDate: "2025-01-30",
+  runtimeConfig: {
+    userName: "user1@example.com",
+    userPasswd: "1234",
+  }
+});
 ```
 
 ***
