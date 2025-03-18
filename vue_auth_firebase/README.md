@@ -36,6 +36,10 @@ export default defineNitroConfig({
   }
 });
 ```
+***
+### Blog
+
+https://zenn.dev/link/comments/e75ef04b2b7150
 
 ***
 # License
