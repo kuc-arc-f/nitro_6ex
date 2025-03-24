@@ -12,9 +12,9 @@ console.log(entryFiles);
   return {
     plugins: [
       svelte(),
-      //tsconfigPaths({
-      //  projects: ['./tsconfig.app.json'],
-      //}),
+      tsconfigPaths({
+        projects: ['./tsconfig.app.json'],
+      }),
     ], 
     define: {
       "process.env.NODE_ENV": '"production"',

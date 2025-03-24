@@ -1,4 +1,6 @@
-export default eventHandler(async (event) => {
+export default defineEventHandler(async (event) => {
+  if(!event.context.user){ return sendRedirect(event, '/login', 301); }
+  
   return `<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,7 +10,7 @@ export default eventHandler(async (event) => {
 </head>
 <body>
     <div id="app"></div>
-    <script type="module" src="/static/entry.js"></script>
+    <script type="module" src="/static/Test1.js"></script>
 </body>
 </html>
   `;

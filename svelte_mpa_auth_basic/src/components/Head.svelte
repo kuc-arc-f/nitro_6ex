@@ -1,10 +1,7 @@
 <script>
 import { onMount } from "svelte";
 onMount(() => {
-  console.log("#Head.svelte");
 });
-import startProc from "../lib/startProc";
-startProc.start();
 </script>
 
 <!-- MarkUp -->
@@ -13,11 +10,9 @@ startProc.start();
   </span>
   <span><a href="/about">[ about ]</a>
   </span>
+  <span><a href="/test1">[ test1 ]</a>
+  </span>
 </div>
 
 <style>
 </style>
-<!--
-<span><a href="/login">[ login ]</a>
-</span>
--->

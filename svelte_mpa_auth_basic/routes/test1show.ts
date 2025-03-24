@@ -1,8 +1,4 @@
-import { renderMove } from "../src/lib/renderUtil";
-
-export default defineEventHandler(async (event) => {
-  if(!event.context.user){ return renderMove(); }
-
+export default eventHandler(async (event) => {
   return `<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,7 +8,7 @@ export default defineEventHandler(async (event) => {
 </head>
 <body>
     <div id="app"></div>
-    <script type="module" src="/static/About.js"></script>
+    <script type="module" src="/static/Test1show.js"></script>
 </body>
 </html>
   `;
