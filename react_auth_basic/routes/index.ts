@@ -1,4 +1,9 @@
-export default eventHandler(async (event) => {
+import { getRequestURL, sendRedirect } from 'h3';
+import { renderMove } from "../src/lib/renderUtil";
+
+export default defineEventHandler(async (event) => {
+  if(!event.context.user){ return renderMove(); };
+
   return `<!DOCTYPE html>
 <html lang="ja">
 <head>
